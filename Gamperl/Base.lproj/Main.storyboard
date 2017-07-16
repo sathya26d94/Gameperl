@@ -484,6 +484,12 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="28"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
@@ -561,9 +567,8 @@
                                             <action selector="backTouched:" destination="wMG-MM-LoC" eventType="touchUpInside" id="kdB-TY-nwF"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="VP8-5c-GHC">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backWhite" translatesAutoresizingMaskIntoConstraints="NO" id="VP8-5c-GHC">
                                         <rect key="frame" x="18" y="40" width="10" height="21"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="jcg-jr-9ol"/>
                                             <constraint firstAttribute="width" constant="10" id="o5R-Tb-l80"/>
@@ -582,8 +587,12 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="rUD-0X-cpa">
-                                <rect key="frame" x="16" y="120" width="343" height="547"/>
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ion-RW-T5j" id="Fdh-KE-Wca"/>
+                                    <outlet property="delegate" destination="ion-RW-T5j" id="jjA-4m-eSV"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -592,8 +601,8 @@
                             <constraint firstItem="rUD-0X-cpa" firstAttribute="top" secondItem="lD6-Uq-6Fa" secondAttribute="bottom" id="6u3-gd-Ttb"/>
                             <constraint firstItem="lD6-Uq-6Fa" firstAttribute="leading" secondItem="jGW-Da-TaG" secondAttribute="leadingMargin" constant="-16" id="7nP-7Q-g6o"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lD6-Uq-6Fa" secondAttribute="trailing" constant="-16" id="GJT-as-OKt"/>
-                            <constraint firstItem="rUD-0X-cpa" firstAttribute="leading" secondItem="jGW-Da-TaG" secondAttribute="leadingMargin" id="Qdh-DD-xXy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rUD-0X-cpa" secondAttribute="trailing" id="U40-3f-0L0"/>
+                            <constraint firstItem="rUD-0X-cpa" firstAttribute="leading" secondItem="jGW-Da-TaG" secondAttribute="leadingMargin" constant="-16" id="Qdh-DD-xXy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rUD-0X-cpa" secondAttribute="trailing" constant="-16" id="U40-3f-0L0"/>
                             <constraint firstItem="pAk-V8-aSF" firstAttribute="top" secondItem="rUD-0X-cpa" secondAttribute="bottom" id="kA6-gw-C5V"/>
                         </constraints>
                     </view>
@@ -653,6 +662,12 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="55"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Martin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOd-Kh-cND">
@@ -708,13 +723,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your password has been sent to your email adress" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kd1-Qr-W7I">
-                                <rect key="frame" x="26" y="259" width="323" height="33.5"/>
+                                <rect key="frame" x="26" y="259" width="323" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rav-V8-BKG">
-                                <rect key="frame" x="26" y="406.5" width="323" height="44"/>
+                                <rect key="frame" x="26" y="383.5" width="323" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="ehQ-A8-sOD"/>
@@ -983,6 +998,12 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TV-xU-hF7">
@@ -1094,6 +1115,12 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="40"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
@@ -1118,9 +1145,8 @@
                                     <action selector="backTouched:" destination="wMG-MM-LoC" eventType="touchUpInside" id="aAR-cK-dId"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="kZ9-lK-IWF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backWhite" translatesAutoresizingMaskIntoConstraints="NO" id="kZ9-lK-IWF">
                                 <rect key="frame" x="219.5" y="25" width="10" height="21"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="KLR-iT-WhW"/>
                                     <constraint firstAttribute="width" constant="10" id="WqP-2X-quB"/>
@@ -1271,11 +1297,12 @@
     </scenes>
     <resources>
         <image name="back" width="23" height="45"/>
+        <image name="backWhite" width="23" height="45"/>
         <image name="done_icon" width="342" height="342"/>
         <image name="logo" width="296" height="382"/>
         <image name="menu" width="75" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ugU-Rd-qjJ"/>
+        <segue reference="Bob-iS-69m"/>
     </inferredMetricsTieBreakers>
 </document>

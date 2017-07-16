@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableCell" rowHeight="200" id="rOL-i4-96I" customClass="CustomTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rOL-i4-96I" id="yiw-yK-2Nh">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="107.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cva-fI-yYC">
+                        <rect key="frame" x="0.0" y="8" width="320" height="81.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Trq-a3-GgH">
+                                <rect key="frame" x="10" y="16" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.52431705910000004" blue="0.70132305360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Trq-a3-GgH" secondAttribute="height" multiplier="1:1" id="FXI-yo-9G1"/>
+                                    <constraint firstAttribute="width" constant="50" id="XaF-N4-ixS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="16:00hrs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gT-Jg-Gvt">
+                                <rect key="frame" x="108.5" y="30.5" width="67.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="130$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOt-sg-fhL">
+                                <rect key="frame" x="255" y="30.5" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uOt-sg-fhL" firstAttribute="centerY" secondItem="cva-fI-yYC" secondAttribute="centerY" id="Dis-nr-OxE"/>
+                            <constraint firstItem="4gT-Jg-Gvt" firstAttribute="centerX" secondItem="cva-fI-yYC" secondAttribute="centerX" constant="-17.75" id="OsM-UK-mtg"/>
+                            <constraint firstAttribute="trailing" secondItem="uOt-sg-fhL" secondAttribute="trailing" constant="26" id="Qbe-11-WKB"/>
+                            <constraint firstItem="Trq-a3-GgH" firstAttribute="centerY" secondItem="cva-fI-yYC" secondAttribute="centerY" id="SNU-Bj-RKi"/>
+                            <constraint firstItem="Trq-a3-GgH" firstAttribute="leading" secondItem="cva-fI-yYC" secondAttribute="leading" constant="10" id="UT4-xV-rOc"/>
+                            <constraint firstItem="uOt-sg-fhL" firstAttribute="centerY" secondItem="cva-fI-yYC" secondAttribute="centerY" id="luK-82-bnc"/>
+                            <constraint firstItem="4gT-Jg-Gvt" firstAttribute="centerY" secondItem="cva-fI-yYC" secondAttribute="centerY" id="wLa-YV-wF8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="cva-fI-yYC" secondAttribute="bottom" constant="10" id="CTH-nt-VkW"/>
+                    <constraint firstItem="cva-fI-yYC" firstAttribute="top" secondItem="yiw-yK-2Nh" secondAttribute="topMargin" id="XnO-wJ-EdP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cva-fI-yYC" secondAttribute="trailing" constant="-8" id="ehg-k1-lUw"/>
+                    <constraint firstItem="cva-fI-yYC" firstAttribute="leading" secondItem="yiw-yK-2Nh" secondAttribute="leadingMargin" constant="-8" id="mNV-OP-g4A"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgView" destination="cva-fI-yYC" id="YFM-dX-lSH"/>
+                <outlet property="lastLabel" destination="uOt-sg-fhL" id="8Pe-an-6xk"/>
+                <outlet property="middleLabel" destination="4gT-Jg-Gvt" id="Wty-pU-CP6"/>
+                <outlet property="profileImageView" destination="Trq-a3-GgH" id="fd4-ij-y3C"/>
+            </connections>
+            <point key="canvasLocation" x="318" y="179"/>
+        </tableViewCell>
+    </objects>
+</document>

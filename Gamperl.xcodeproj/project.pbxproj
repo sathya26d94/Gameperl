@@ -13,6 +13,8 @@
 		5C1CA3081F17B85600447529 /* AcceptedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1CA3071F17B85600447529 /* AcceptedViewController.m */; };
 		5C1CA30B1F17B97E00447529 /* ResendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1CA30A1F17B97E00447529 /* ResendViewController.m */; };
 		5C1CA30E1F17E21D00447529 /* CALayer+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1CA30D1F17E21D00447529 /* CALayer+XibConfiguration.m */; };
+		5C781BE91F1B335D007B5660 /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C781BE71F1B335D007B5660 /* CustomTableCell.m */; };
+		5C781BEA1F1B335D007B5660 /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C781BE81F1B335D007B5660 /* CustomTableCell.xib */; };
 		5C8A6FDC1F18FB7300877EFD /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A6FD91F18FB7300877EFD /* menu.png */; };
 		5C8A6FDD1F18FB7300877EFD /* menu2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A6FDA1F18FB7300877EFD /* menu2x.png */; };
 		5C8A6FDE1F18FB7300877EFD /* menu3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A6FDB1F18FB7300877EFD /* menu3x.png */; };
@@ -57,6 +59,9 @@
 		5C1CA30A1F17B97E00447529 /* ResendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResendViewController.m; sourceTree = "<group>"; };
 		5C1CA30C1F17E21D00447529 /* CALayer+XibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XibConfiguration.h"; sourceTree = "<group>"; };
 		5C1CA30D1F17E21D00447529 /* CALayer+XibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XibConfiguration.m"; sourceTree = "<group>"; };
+		5C781BE61F1B335D007B5660 /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
+		5C781BE71F1B335D007B5660 /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
+		5C781BE81F1B335D007B5660 /* CustomTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableCell.xib; sourceTree = "<group>"; };
 		5C8A6FD91F18FB7300877EFD /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		5C8A6FDA1F18FB7300877EFD /* menu2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu2x.png; sourceTree = "<group>"; };
 		5C8A6FDB1F18FB7300877EFD /* menu3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu3x.png; sourceTree = "<group>"; };
@@ -203,6 +208,9 @@
 				5C8A6FE61F19CB4000877EFD /* MenuViewController.m */,
 				5C8A70501F1A890300877EFD /* ListRequestsViewController.h */,
 				5C8A70511F1A890300877EFD /* ListRequestsViewController.m */,
+				5C781BE61F1B335D007B5660 /* CustomTableCell.h */,
+				5C781BE71F1B335D007B5660 /* CustomTableCell.m */,
+				5C781BE81F1B335D007B5660 /* CustomTableCell.xib */,
 				5C1CA30C1F17E21D00447529 /* CALayer+XibConfiguration.h */,
 				5C1CA30D1F17E21D00447529 /* CALayer+XibConfiguration.m */,
 				5CCDCD671F0E95B900FAFEC5 /* Main.storyboard */,
@@ -295,6 +303,7 @@
 			files = (
 				5C8A6FDD1F18FB7300877EFD /* menu2x.png in Resources */,
 				5C8A6FDC1F18FB7300877EFD /* menu.png in Resources */,
+				5C781BEA1F1B335D007B5660 /* CustomTableCell.xib in Resources */,
 				5CCDCD6E1F0E95B900FAFEC5 /* LaunchScreen.storyboard in Resources */,
 				5C8A6FDE1F18FB7300877EFD /* menu3x.png in Resources */,
 				5CCDCD6B1F0E95B900FAFEC5 /* Assets.xcassets in Resources */,
@@ -314,6 +323,7 @@
 				5C8A70481F1A393800877EFD /* FSCalendarDelegationFactory.m in Sources */,
 				5C8A70461F1A393800877EFD /* FSCalendarCollectionViewLayout.m in Sources */,
 				5C8A704A1F1A393800877EFD /* FSCalendarExtensions.m in Sources */,
+				5C781BE91F1B335D007B5660 /* CustomTableCell.m in Sources */,
 				5C1CA30B1F17B97E00447529 /* ResendViewController.m in Sources */,
 				5C8A70521F1A890300877EFD /* ListRequestsViewController.m in Sources */,
 				5C8A704F1F1A393800877EFD /* FSCalendarWeekdayView.m in Sources */,
