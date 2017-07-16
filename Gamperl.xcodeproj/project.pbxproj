@@ -40,6 +40,9 @@
 		5C8A70521F1A890300877EFD /* ListRequestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A70511F1A890300877EFD /* ListRequestsViewController.m */; };
 		5C92B51B1F1B77970039A36F /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C92B51A1F1B77970039A36F /* PlanViewController.m */; };
 		5C92B51E1F1B82D20039A36F /* RequestNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C92B51D1F1B82D20039A36F /* RequestNotificationViewController.m */; };
+		5C92B5211F1BA8DD0039A36F /* ProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C92B5201F1BA8DD0039A36F /* ProductsViewController.m */; };
+		5C92B5281F1BA9E60039A36F /* CustomTableCellProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C92B5261F1BA9E60039A36F /* CustomTableCellProducts.m */; };
+		5C92B5291F1BA9E60039A36F /* CustomTableCellProducts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C92B5271F1BA9E60039A36F /* CustomTableCellProducts.xib */; };
 		5CCDCD601F0E95B900FAFEC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCDCD5F1F0E95B900FAFEC5 /* main.m */; };
 		5CCDCD631F0E95B900FAFEC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCDCD621F0E95B900FAFEC5 /* AppDelegate.m */; };
 		5CCDCD661F0E95B900FAFEC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCDCD651F0E95B900FAFEC5 /* ViewController.m */; };
@@ -112,6 +115,11 @@
 		5C92B51A1F1B77970039A36F /* PlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanViewController.m; sourceTree = "<group>"; };
 		5C92B51C1F1B82D20039A36F /* RequestNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestNotificationViewController.h; sourceTree = "<group>"; };
 		5C92B51D1F1B82D20039A36F /* RequestNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestNotificationViewController.m; sourceTree = "<group>"; };
+		5C92B51F1F1BA8DD0039A36F /* ProductsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsViewController.h; sourceTree = "<group>"; };
+		5C92B5201F1BA8DD0039A36F /* ProductsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsViewController.m; sourceTree = "<group>"; };
+		5C92B5251F1BA9E60039A36F /* CustomTableCellProducts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCellProducts.h; sourceTree = "<group>"; };
+		5C92B5261F1BA9E60039A36F /* CustomTableCellProducts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCellProducts.m; sourceTree = "<group>"; };
+		5C92B5271F1BA9E60039A36F /* CustomTableCellProducts.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableCellProducts.xib; sourceTree = "<group>"; };
 		5CCDCD5B1F0E95B900FAFEC5 /* Gamperl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamperl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCDCD5F1F0E95B900FAFEC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5CCDCD611F0E95B900FAFEC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -234,6 +242,11 @@
 				5C92B51A1F1B77970039A36F /* PlanViewController.m */,
 				5C92B51C1F1B82D20039A36F /* RequestNotificationViewController.h */,
 				5C92B51D1F1B82D20039A36F /* RequestNotificationViewController.m */,
+				5C92B51F1F1BA8DD0039A36F /* ProductsViewController.h */,
+				5C92B5201F1BA8DD0039A36F /* ProductsViewController.m */,
+				5C92B5251F1BA9E60039A36F /* CustomTableCellProducts.h */,
+				5C92B5261F1BA9E60039A36F /* CustomTableCellProducts.m */,
+				5C92B5271F1BA9E60039A36F /* CustomTableCellProducts.xib */,
 				5C781BE61F1B335D007B5660 /* CustomTableCell.h */,
 				5C781BE71F1B335D007B5660 /* CustomTableCell.m */,
 				5C781BE81F1B335D007B5660 /* CustomTableCell.xib */,
@@ -341,6 +354,7 @@
 				5C8A6FDD1F18FB7300877EFD /* menu2x.png in Resources */,
 				5C8A6FDC1F18FB7300877EFD /* menu.png in Resources */,
 				5C781BEA1F1B335D007B5660 /* CustomTableCell.xib in Resources */,
+				5C92B5291F1BA9E60039A36F /* CustomTableCellProducts.xib in Resources */,
 				5CCDCD6E1F0E95B900FAFEC5 /* LaunchScreen.storyboard in Resources */,
 				5C8A6FDE1F18FB7300877EFD /* menu3x.png in Resources */,
 				5CCDCD6B1F0E95B900FAFEC5 /* Assets.xcassets in Resources */,
@@ -425,8 +439,10 @@
 				5C8A6FE71F19CB4000877EFD /* MenuViewController.m in Sources */,
 				5C8A70421F1A393800877EFD /* FSCalendarAppearance.m in Sources */,
 				5C92B51E1F1B82D20039A36F /* RequestNotificationViewController.m in Sources */,
+				5C92B5211F1BA8DD0039A36F /* ProductsViewController.m in Sources */,
 				5CCDCD601F0E95B900FAFEC5 /* main.m in Sources */,
 				5C8A6FE41F19CA2300877EFD /* ProfileViewController.m in Sources */,
+				5C92B5281F1BA9E60039A36F /* CustomTableCellProducts.m in Sources */,
 				5C8A704B1F1A393800877EFD /* FSCalendarHeaderView.m in Sources */,
 				5C8A70411F1A393800877EFD /* FSCalendar+Deprecated.m in Sources */,
 				5C8A70451F1A393800877EFD /* FSCalendarCollectionView.m in Sources */,
