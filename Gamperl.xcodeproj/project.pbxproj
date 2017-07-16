@@ -39,6 +39,7 @@
 		5C8A704F1F1A393800877EFD /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A703F1F1A393800877EFD /* FSCalendarWeekdayView.m */; };
 		5C8A70521F1A890300877EFD /* ListRequestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A70511F1A890300877EFD /* ListRequestsViewController.m */; };
 		5C92B51B1F1B77970039A36F /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C92B51A1F1B77970039A36F /* PlanViewController.m */; };
+		5C92B51E1F1B82D20039A36F /* RequestNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C92B51D1F1B82D20039A36F /* RequestNotificationViewController.m */; };
 		5CCDCD601F0E95B900FAFEC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCDCD5F1F0E95B900FAFEC5 /* main.m */; };
 		5CCDCD631F0E95B900FAFEC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCDCD621F0E95B900FAFEC5 /* AppDelegate.m */; };
 		5CCDCD661F0E95B900FAFEC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCDCD651F0E95B900FAFEC5 /* ViewController.m */; };
@@ -109,6 +110,8 @@
 		5C8A70511F1A890300877EFD /* ListRequestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListRequestsViewController.m; sourceTree = "<group>"; };
 		5C92B5191F1B77970039A36F /* PlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanViewController.h; sourceTree = "<group>"; };
 		5C92B51A1F1B77970039A36F /* PlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanViewController.m; sourceTree = "<group>"; };
+		5C92B51C1F1B82D20039A36F /* RequestNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestNotificationViewController.h; sourceTree = "<group>"; };
+		5C92B51D1F1B82D20039A36F /* RequestNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestNotificationViewController.m; sourceTree = "<group>"; };
 		5CCDCD5B1F0E95B900FAFEC5 /* Gamperl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamperl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCDCD5F1F0E95B900FAFEC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5CCDCD611F0E95B900FAFEC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -229,6 +232,8 @@
 				5C8A70511F1A890300877EFD /* ListRequestsViewController.m */,
 				5C92B5191F1B77970039A36F /* PlanViewController.h */,
 				5C92B51A1F1B77970039A36F /* PlanViewController.m */,
+				5C92B51C1F1B82D20039A36F /* RequestNotificationViewController.h */,
+				5C92B51D1F1B82D20039A36F /* RequestNotificationViewController.m */,
 				5C781BE61F1B335D007B5660 /* CustomTableCell.h */,
 				5C781BE71F1B335D007B5660 /* CustomTableCell.m */,
 				5C781BE81F1B335D007B5660 /* CustomTableCell.xib */,
@@ -419,6 +424,7 @@
 				5C8A704C1F1A393800877EFD /* FSCalendarScopeHandle.m in Sources */,
 				5C8A6FE71F19CB4000877EFD /* MenuViewController.m in Sources */,
 				5C8A70421F1A393800877EFD /* FSCalendarAppearance.m in Sources */,
+				5C92B51E1F1B82D20039A36F /* RequestNotificationViewController.m in Sources */,
 				5CCDCD601F0E95B900FAFEC5 /* main.m in Sources */,
 				5C8A6FE41F19CA2300877EFD /* ProfileViewController.m in Sources */,
 				5C8A704B1F1A393800877EFD /* FSCalendarHeaderView.m in Sources */,
