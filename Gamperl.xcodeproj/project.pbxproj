@@ -44,6 +44,7 @@
 		5CCDCD691F0E95B900FAFEC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CCDCD671F0E95B900FAFEC5 /* Main.storyboard */; };
 		5CCDCD6B1F0E95B900FAFEC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CCDCD6A1F0E95B900FAFEC5 /* Assets.xcassets */; };
 		5CCDCD6E1F0E95B900FAFEC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CCDCD6C1F0E95B900FAFEC5 /* LaunchScreen.storyboard */; };
+		FE387205A15798F4A26E1EAE /* libPods-Gamperl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C07085EB3A19595DF938880B /* libPods-Gamperl.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +116,9 @@
 		5CCDCD6A1F0E95B900FAFEC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CCDCD6D1F0E95B900FAFEC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CCDCD6F1F0E95B900FAFEC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB72A857784B16C757C1BD7 /* Pods-Gamperl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gamperl.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gamperl/Pods-Gamperl.release.xcconfig"; sourceTree = "<group>"; };
+		951EFE0C09509F9F0B6F32AE /* Pods-Gamperl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gamperl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gamperl/Pods-Gamperl.debug.xcconfig"; sourceTree = "<group>"; };
+		C07085EB3A19595DF938880B /* libPods-Gamperl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gamperl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,12 +126,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE387205A15798F4A26E1EAE /* libPods-Gamperl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19E53DDB827DE64B5B0379EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				951EFE0C09509F9F0B6F32AE /* Pods-Gamperl.debug.xcconfig */,
+				7BB72A857784B16C757C1BD7 /* Pods-Gamperl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5C8A701F1F1A391F00877EFD /* FSCalendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +186,8 @@
 			children = (
 				5CCDCD5D1F0E95B900FAFEC5 /* Gamperl */,
 				5CCDCD5C1F0E95B900FAFEC5 /* Products */,
+				19E53DDB827DE64B5B0379EA /* Pods */,
+				6CE044EF573FF3203C7F5A48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,6 +258,14 @@
 			name = Resource;
 			sourceTree = "<group>";
 		};
+		6CE044EF573FF3203C7F5A48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C07085EB3A19595DF938880B /* libPods-Gamperl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CCDCD721F0E95B900FAFEC5 /* Build configuration list for PBXNativeTarget "Gamperl" */;
 			buildPhases = (
+				0A8D3FF8DA40D9C0F282784D /* [CP] Check Pods Manifest.lock */,
 				5CCDCD571F0E95B900FAFEC5 /* Sources */,
 				5CCDCD581F0E95B900FAFEC5 /* Frameworks */,
 				5CCDCD591F0E95B900FAFEC5 /* Resources */,
+				491DCC601C3DF46B8763CA94 /* [CP] Embed Pods Frameworks */,
+				C3586A3DE3A8670D3F6D83D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,6 +339,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A8D3FF8DA40D9C0F282784D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		491DCC601C3DF46B8763CA94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gamperl/Pods-Gamperl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3586A3DE3A8670D3F6D83D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gamperl/Pods-Gamperl-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5CCDCD571F0E95B900FAFEC5 /* Sources */ = {
@@ -465,6 +540,7 @@
 		};
 		5CCDCD731F0E95B900FAFEC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 951EFE0C09509F9F0B6F32AE /* Pods-Gamperl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C462ZD5428;
@@ -478,6 +554,7 @@
 		};
 		5CCDCD741F0E95B900FAFEC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB72A857784B16C757C1BD7 /* Pods-Gamperl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C462ZD5428;
