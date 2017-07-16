@@ -8,6 +8,7 @@
 
 #import "ListRequestsViewController.h"
 #import "CustomTableCell.h"
+#import "PlanViewController.h"
 
 @interface ListRequestsViewController ()
 
@@ -70,7 +71,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    //open plan viewcontroller
 }
 
 @end
