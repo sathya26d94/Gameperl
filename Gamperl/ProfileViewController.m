@@ -34,6 +34,9 @@
     UIButton *menuButton = [self.view viewWithTag:10001];
     [self menuTouched:menuButton];
 }
+- (IBAction)aboutMeEdit:(id)sender {
+    
+}
 
 - (IBAction)menuTouched:(id)sender {
     if (self.showingMenuPanel) {
