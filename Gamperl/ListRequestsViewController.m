@@ -72,6 +72,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     //open plan viewcontroller
+    UIStoryboard*  sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    PlanViewController *content =  [sb instantiateViewControllerWithIdentifier:@"PlanViewController"];
+    content.view.layer.borderColor = CFBridgingRetain([UIColor blackColor]);
+    content.view.layer.borderWidth = 2;
+    content.view.frame = CGRectMake(50, 200, 330, 380);
+    [self addChildViewController:content];
+    [self.view addSubview:content.view];
+    [content didMoveToParentViewController:self];
 }
 
 @end
