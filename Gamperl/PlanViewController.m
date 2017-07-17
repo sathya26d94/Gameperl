@@ -23,5 +23,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)closeTouched:(id)sender {
+    [self removeFromParentViewController];
+    [self.view removeFromSuperview];
+}
 
 @end

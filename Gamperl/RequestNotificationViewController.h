@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface RequestNotificationViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *tickImageView;
+@property (weak, nonatomic) IBOutlet UILabel *address;
+@property (weak, nonatomic) IBOutlet UILabel *totalPrice1;
+@property (weak, nonatomic) IBOutlet UILabel *totalPrice2;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

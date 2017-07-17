@@ -9,6 +9,7 @@
 #import "ListRequestsViewController.h"
 #import "CustomTableCell.h"
 #import "PlanViewController.h"
+#import "RequestNotificationViewController.h"
 
 @interface ListRequestsViewController ()
 
@@ -67,19 +68,29 @@
     cell.middleLabel.text = @"16:00hr";
     cell.lastLabel.text = @"420$";
     cell.bgView.backgroundColor = [UIColor grayColor];
+    if (indexPath.row == 0) {
+        cell.bgView.backgroundColor = [UIColor whiteColor];
+    }
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //open plan viewcontroller
-    UIStoryboard*  sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    PlanViewController *content =  [sb instantiateViewControllerWithIdentifier:@"PlanViewController"];
-    content.view.layer.borderColor = CFBridgingRetain([UIColor blackColor]);
-    content.view.layer.borderWidth = 2;
-    content.view.frame = CGRectMake(50, 200, 330, 380);
-    [self addChildViewController:content];
-    [self.view addSubview:content.view];
-    [content didMoveToParentViewController:self];
+    if (indexPath.row == 0) {
+        //open plan viewcontroller
+        UIStoryboard*  sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        PlanViewController *content =  [sb instantiateViewControllerWithIdentifier:@"PlanViewController"];
+        content.view.layer.borderColor = [UIColor blackColor].CGColor;
+        content.view.layer.borderWidth = 2;
+        content.view.frame = CGRectMake(50, 200, 330, 380);
+        [self addChildViewController:content];
+        [self.view addSubview:content.view];
+        [content didMoveToParentViewController:self];
+    } else {
+        UIStoryboard*  sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        RequestNotificationViewController *content =  [sb instantiateViewControllerWithIdentifier:@"RequestNotificationViewController"];
+        [self presentViewController:content animated:true completion:nil];
+    }
+    
 }
 
 @end
